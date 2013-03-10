@@ -23,12 +23,14 @@ void startRiding(void){
 	}
 }
 void testCalibratePID_A(int Max,int pFacktor, int iFacktor, int dFacktor, int sollwert, int istwert){
-	initPIDA(Max,pFacktor,iFacktor,dFacktor);
+	initPID(Max,pFacktor,iFacktor,dFacktor);
 	initEncoders();
 	regelverzoegerung=5;
 	PIDA_Testsollwert= sollwert;
+	PIDB_Testsollwert= sollwert;
 	PIDA_Testistwert= istwert;
 	PIDA_Activated=1;
+	PIDB_Activated=1;
 	
 	
 	

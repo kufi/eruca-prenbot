@@ -200,7 +200,28 @@ void EncoderMotorB_OnInterrupt(void)
 {
 	if(EncoderMotorB_GetVal()){
 	tiks = EncoderRefrenztimer_GetCounterValue(MyFakeEncoderRefrenzTimerPtr);
-	tiksB =  tiks - oldticksB;
+	switch(iB)
+		 {
+		    case 0:
+		    	tiksB0 = tiks - oldticksB;
+		    	iB++;
+		    break;
+
+		    case 1:
+		    	tiksB1 = tiks - oldticksB;
+		    	iB++;
+		    break;
+		    case 2:
+		    	tiksB2 = tiks - oldticksB;
+		    	iB++;
+		    break;
+		    case 3:
+		    	tiksB3 = tiks - oldticksB;
+		    	iB=0;
+		    break;
+		    default:
+		    	iB=0;
+		 }
 	oldticksB = tiks;
 	}
 	stepsB++;
@@ -435,7 +456,7 @@ void RegelungReferenztimer_OnCounterRestart(LDD_TUserData *UserDataPtr)
 	
 	if(PIDinterruptCounter>= regelverzoegerung){		
 		if(PIDA_Activated){
-      calcAritmeticMidle(iA);
+      calcAritmeticMidleA(iA);
 	  PIDA_Testresault =pidA(PIDA_Testsollwert, tiksA_am);
 	  newIntensityEngineA = intensityEngineA_HR - (PIDA_Testresault);
 	  if(newIntensityEngineA>=0){
@@ -445,17 +466,17 @@ void RegelungReferenztimer_OnCounterRestart(LDD_TUserData *UserDataPtr)
 	  		  setMotorA_HR(0);
 	  	  }
 	 }
-		if(PIDB_Activated){
-		      calcAritmeticMidle(iA);
-			  PIDA_Testresault =pidA(PIDA_Testsollwert, tiksA_am);
-			  newIntensityEngineA = intensityEngineA_HR - (PIDA_Testresault);
-			  if(newIntensityEngineA>=0){
-				  setMotorA_HR(newIntensityEngineA);
-			  }
-			  if(newIntensityEngineA<0){
-			  		  setMotorA_HR(0);
-			  	  }
-			 }
+	if(PIDB_Activated){
+		calcAritmeticMidleB(iB);
+		PIDB_Testresault =pidB(PIDB_Testsollwert, tiksB_am);
+		newIntensityEngineB = intensityEngineB_HR - (PIDB_Testresault);
+		if(newIntensityEngineB>=0){
+		setMotorB_HR(newIntensityEngineB);
+		}
+		if(newIntensityEngineB<0){
+			 setMotorB_HR(0);
+		}
+	}
 		
 		 PIDinterruptCounter=0;
 	}
@@ -481,6 +502,40 @@ void RegelungReferenztimer_OnCounterRestart(LDD_TUserData *UserDataPtr)
 ** ===================================================================
 */
 void ResInterrupt_OnInterrupt(void)
+{
+  /* Write your code here ... */
+}
+
+/*
+** ===================================================================
+**     Event       :  EInt2_OnInterrupt (module Events)
+**
+**     Component   :  EInt2 [ExtInt]
+**     Description :
+**         This event is called when an active signal edge/level has
+**         occurred.
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void EInt2_OnInterrupt(void)
+{
+  /* Write your code here ... */
+}
+
+/*
+** ===================================================================
+**     Event       :  EInt1_OnInterrupt (module Events)
+**
+**     Component   :  EInt1 [ExtInt]
+**     Description :
+**         This event is called when an active signal edge/level has
+**         occurred.
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void EInt1_OnInterrupt(void)
 {
   /* Write your code here ... */
 }

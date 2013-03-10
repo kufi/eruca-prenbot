@@ -55,6 +55,10 @@
 #include "ExtIntLdd3.h"
 #include "ResIO.h"
 #include "BitIoLdd2.h"
+#include "EInt1.h"
+#include "ExtIntLdd8.h"
+#include "EInt2.h"
+#include "ExtIntLdd9.h"
 /* Including shared modules, which are used for whole project */
 #include "PE_Types.h"
 #include "PE_Error.h"

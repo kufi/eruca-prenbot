@@ -9,7 +9,7 @@
 
 
 
-void initPIDA(int maximalausschlag_,int p_factor_,int i_factor_,int d_factor_){
+void initPID(int maximalausschlag_,int p_factor_,int i_factor_,int d_factor_){
 	p_factorA=p_factor_;
 	i_factorA=i_factor_;
 	d_factorA=d_factor_;
@@ -21,6 +21,18 @@ void initPIDA(int maximalausschlag_,int p_factor_,int i_factor_,int d_factor_){
 	i_maximalausschlagA =0;
 	lezterFunktionswertA=0;
 	i_resultatA=0;
+	
+	p_factorB=p_factor_;
+    i_factorB=i_factor_;
+    d_factorB=d_factor_;
+	maximalausschlagB=maximalausschlag_;
+	maximalfehlerB=100;
+	p_maximalausschlagB=100;
+	sumirterfehlerB =0;
+	maximalfehelersummeB=2000;
+	i_maximalausschlagB =0;
+	lezterFunktionswertB=0;
+	i_resultatB=0;
 }
 
 int pidA(int sollwert,int istwert){
@@ -66,6 +78,53 @@ int pidA(int sollwert,int istwert){
 	    }
 	    else if(ret < -maximalausschlagA){
 	      ret = -maximalausschlagA;
+	    }
+	    return ret/5;
+}
+
+int pidB(int sollwert,int istwert){
+	int temp;
+	int ret;
+	
+	errorB = sollwert - istwert;
+	
+	//Calculate Pterm and limit error overflow
+	if (errorB > maximalfehlerB){
+	    p_resultatB = p_maximalausschlagB;
+	  }
+	  else if (errorB < -maximalfehlerB){
+	    p_resultatB = -p_maximalausschlagB;
+	  }
+	  else{
+	    p_resultatB = p_factorB * errorB;
+	  }
+	
+	// Calculate Iterm and limit integral runaway
+	  temp = sumirterfehlerB + errorB;
+	  if(temp > maximalfehelersummeB){
+		 i_resultatB = i_maximalausschlagB;
+		 sumirterfehlerB = i_maximalausschlagB;
+	  }
+	  else if(temp < -maximalfehelersummeB){
+	    i_resultatB = -i_maximalausschlagB;
+	    sumirterfehlerB = -i_maximalausschlagB;
+	  }
+	  else{
+		  sumirterfehlerB = temp;
+	      i_resultatB = i_factorB * temp;
+	  }
+	  // Calculate Dterm
+	    d_resultatB = d_factorB * (lezterFunktionswertB - istwert);
+
+	    lezterFunktionswertB = istwert;
+
+	    ret = p_resultatB+i_resultatB+d_resultatB;
+	    
+	    if(ret > maximalausschlagB){
+	      ret = maximalausschlagB;
+	    }
+	    else if(ret < -maximalausschlagB){
+	      ret = -maximalausschlagB;
 	    }
 	    return ret/5;
 }

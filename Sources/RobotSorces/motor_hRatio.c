@@ -68,7 +68,7 @@ void initalizeMotros_HR(void){
 	engineAStop_HR();
 	engineBStop_HR();
 	MotorA_PWM_SetRatio16(0xFFFF);
-	MotorA_PWM_SetRatio16(0xFFFF);
+	MotorB_PWM_SetRatio16(0xFFFF);
 }
 /**
  * sets the speed of the A Motor

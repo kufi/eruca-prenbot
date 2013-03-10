@@ -5,7 +5,7 @@
 **     Processor   : MKL25Z128VLK4
 **     Version     : Component 01.025, Driver 01.04, CPU db: 3.00.000
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2013-03-10, 10:52, # CodeGen: 76
+**     Date/Time   : 2013-03-10, 14:38, # CodeGen: 77
 **     Abstract    :
 **
 **     Settings    :
@@ -32,7 +32,9 @@
 ** Array of initialized device structures of LDD components.
 ** ===========================================================================
 */
-LDD_TDeviceData *PE_LDD_DeviceDataList[21] = {
+LDD_TDeviceData *PE_LDD_DeviceDataList[23] = {
+    NULL,
+    NULL,
     NULL,
     NULL,
     NULL,

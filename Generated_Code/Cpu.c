@@ -7,7 +7,7 @@
 **     Version     : Component 01.025, Driver 01.04, CPU db: 3.00.000
 **     Datasheet   : KL25RM, Rev.1, Jun 2012
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2013-03-10, 10:52, # CodeGen: 76
+**     Date/Time   : 2013-03-10, 14:38, # CodeGen: 77
 **     Abstract    :
 **
 **     Settings    :
@@ -58,6 +58,10 @@
 #include "ExtIntLdd3.h"
 #include "ResIO.h"
 #include "BitIoLdd2.h"
+#include "EInt1.h"
+#include "ExtIntLdd8.h"
+#include "EInt2.h"
+#include "ExtIntLdd9.h"
 #include "PE_Types.h"
 #include "PE_Error.h"
 #include "PE_Const.h"
@@ -103,6 +107,8 @@ PE_ISR(Cpu_ivINT_PORTD)
   ExtIntLdd6_Interrupt();              /* Call the service routine */
   ExtIntLdd7_Interrupt();              /* Call the service routine */
   ExtIntLdd3_Interrupt();              /* Call the service routine */
+  ExtIntLdd8_Interrupt();              /* Call the service routine */
+  ExtIntLdd9_Interrupt();              /* Call the service routine */
 }
 
 /*
@@ -251,8 +257,8 @@ void PE_low_level_init(void)
   /* SMC_PMPROT: ??=0,??=0,AVLP=0,??=0,ALLS=0,??=0,AVLLS=0,??=0 */
   SMC_PMPROT = 0x00U;                  /* Setup Power mode protection register */
   /* Common initialization of the CPU registers */
-  /* GPIOD_PDDR: PDD&=~0xD9 */
-  GPIOD_PDDR &= (uint32_t)~(uint32_t)(GPIO_PDDR_PDD(0xD9));                                                   
+  /* GPIOD_PDDR: PDD&=~0xDF */
+  GPIOD_PDDR &= (uint32_t)~(uint32_t)(GPIO_PDDR_PDD(0xDF));                                                   
   /* GPIOA_PDDR: PDD&=~0x00030000 */
   GPIOA_PDDR &= (uint32_t)~(uint32_t)(GPIO_PDDR_PDD(0x00030000));                                                   
   /* PORTA_PCR20: ISF=0,MUX=7 */
@@ -303,6 +309,10 @@ void PE_low_level_init(void)
   (void)ExtIntLdd3_Init(NULL);
   /* ### BitIO_LDD "BitIoLdd2" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
   (void)BitIoLdd2_Init(NULL);
+  /* ### ExtInt_LDD "ExtIntLdd8" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
+  (void)ExtIntLdd8_Init(NULL);
+  /* ### ExtInt_LDD "ExtIntLdd9" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
+  (void)ExtIntLdd9_Init(NULL);
   __EI();
 }
   /* Flash configuration field */

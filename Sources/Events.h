@@ -59,6 +59,10 @@
 #include "ExtIntLdd3.h"
 #include "ResIO.h"
 #include "BitIoLdd2.h"
+#include "EInt1.h"
+#include "ExtIntLdd8.h"
+#include "EInt2.h"
+#include "ExtIntLdd9.h"
 #include "PE_LDD.h"
 
 void Cpu_OnNMIINT(void);
@@ -367,6 +371,34 @@ void ResInterrupt_OnInterrupt(void);
 **     Event       :  ResInterrupt_OnInterrupt (module Events)
 **
 **     Component   :  ResInterrupt [ExtInt]
+**     Description :
+**         This event is called when an active signal edge/level has
+**         occurred.
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+
+void EInt2_OnInterrupt(void);
+/*
+** ===================================================================
+**     Event       :  EInt2_OnInterrupt (module Events)
+**
+**     Component   :  EInt2 [ExtInt]
+**     Description :
+**         This event is called when an active signal edge/level has
+**         occurred.
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+
+void EInt1_OnInterrupt(void);
+/*
+** ===================================================================
+**     Event       :  EInt1_OnInterrupt (module Events)
+**
+**     Component   :  EInt1 [ExtInt]
 **     Description :
 **         This event is called when an active signal edge/level has
 **         occurred.
