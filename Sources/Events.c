@@ -451,6 +451,23 @@ void RegelungReferenztimer_OnCounterRestart(LDD_TUserData *UserDataPtr)
 
 }
 
+/*
+** ===================================================================
+**     Event       :  ResInterrupt_OnInterrupt (module Events)
+**
+**     Component   :  ResInterrupt [ExtInt]
+**     Description :
+**         This event is called when an active signal edge/level has
+**         occurred.
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void ResInterrupt_OnInterrupt(void)
+{
+  /* Write your code here ... */
+}
+
 /* END Events */
 
 /*

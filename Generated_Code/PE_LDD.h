@@ -5,7 +5,7 @@
 **     Processor   : MKL25Z128VLK4
 **     Version     : Component 01.025, Driver 01.04, CPU db: 3.00.000
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2013-02-04, 14:27, # CodeGen: 28
+**     Date/Time   : 2013-03-10, 10:52, # CodeGen: 76
 **     Abstract    :
 **
 **     Settings    :
@@ -67,6 +67,8 @@
 #define PE_LDD_COMPONENT_ExtIntLdd5_ID           0x10U
 #define PE_LDD_COMPONENT_ExtIntLdd6_ID           0x11U
 #define PE_LDD_COMPONENT_ExtIntLdd7_ID           0x12U
+#define PE_LDD_COMPONENT_ExtIntLdd3_ID           0x13U
+#define PE_LDD_COMPONENT_BitIoLdd2_ID            0x14U
 
 /*
 ** ===================================================================
@@ -2222,6 +2224,10 @@ void LDD_SetClockConfiguration(LDD_TClockConfiguration ClockConfiguration);
 #include "ExtIntLdd6.h"
 #include "US_Rechts_HeckListener.h"
 #include "ExtIntLdd7.h"
+#include "ResInterrupt.h"
+#include "ExtIntLdd3.h"
+#include "ResIO.h"
+#include "BitIoLdd2.h"
 
 
 #endif

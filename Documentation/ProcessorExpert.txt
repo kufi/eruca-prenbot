@@ -287,6 +287,26 @@ Module "US_Rechts_HeckListener" (component ExtInt)
                 only if HW module allows enable/disable of the interrupt.
    - US_Rechts_HeckListener_GetVal -Returns the actual value of the input pin of the component.
 
+Module "ResInterrupt" (component ExtInt)
+   - ResInterrupt_Enable -Enable the component - the external events are accepted. This method is available only if HW module 
+                allows enable/disable of the interrupt.
+   - ResInterrupt_Disable -Disable the component - the external events are not accepted. This method is available only if HW 
+                module allows enable/disable of the interrupt.
+   - ResInterrupt_GetVal -Returns the actual value of the input pin of the component.
+
+Module "ResIO"     (component BitIO)
+   - ResIO_GetVal -Returns the input/output value. If the direction is [input] then the input value of the pin is read and 
+                returned. If the direction is [output] then the last written value is returned (see <Safe mode> property for 
+                limitations). This method cannot be disabled if direction is [input].
+   - ResIO_PutVal -The specified output value is set. If the direction is [input], the component saves the value to a memory or 
+                a register and this value will be written to the pin after switching to the output mode (using [SetDir(TRUE)]; 
+                see <Safe mode> property for limitations). If the direction is [output], it writes the value to the pin. 
+                (Method is available only if the direction = _[output]_ or _[input/output]_).
+   - ResIO_ClrVal -Clears (set to zero) the output value. It is equivalent to the [PutVal(FALSE)]. This method is available 
+                only if the direction = _[output]_ or _[input/output]_.
+   - ResIO_SetVal -Sets (to one) the output value. It is equivalent to the [PutVal(TRUE)]. This method is available only if the 
+                direction = _[output]_ or _[input/output]_.
+
 Module "Cpu"       (component MKL25Z128LK4)
 
 ===================================================================================

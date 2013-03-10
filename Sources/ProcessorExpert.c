@@ -51,6 +51,10 @@
 #include "ExtIntLdd6.h"
 #include "US_Rechts_HeckListener.h"
 #include "ExtIntLdd7.h"
+#include "ResInterrupt.h"
+#include "ExtIntLdd3.h"
+#include "ResIO.h"
+#include "BitIoLdd2.h"
 /* Including shared modules, which are used for whole project */
 #include "PE_Types.h"
 #include "PE_Error.h"

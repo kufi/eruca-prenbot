@@ -55,6 +55,10 @@
 #include "ExtIntLdd6.h"
 #include "US_Rechts_HeckListener.h"
 #include "ExtIntLdd7.h"
+#include "ResInterrupt.h"
+#include "ExtIntLdd3.h"
+#include "ResIO.h"
+#include "BitIoLdd2.h"
 #include "PE_LDD.h"
 
 void Cpu_OnNMIINT(void);
@@ -353,6 +357,20 @@ void RegelungReferenztimer_OnCounterRestart(LDD_TUserData *UserDataPtr);
 **       * UserDataPtr     - Pointer to the user or
 **                           RTOS specific data. The pointer passed as
 **                           the parameter of Init method.
+**     Returns     : Nothing
+** ===================================================================
+*/
+
+void ResInterrupt_OnInterrupt(void);
+/*
+** ===================================================================
+**     Event       :  ResInterrupt_OnInterrupt (module Events)
+**
+**     Component   :  ResInterrupt [ExtInt]
+**     Description :
+**         This event is called when an active signal edge/level has
+**         occurred.
+**     Parameters  : None
 **     Returns     : Nothing
 ** ===================================================================
 */
