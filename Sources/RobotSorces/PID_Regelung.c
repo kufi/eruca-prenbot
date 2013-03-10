@@ -14,12 +14,13 @@ void initPIDA(int maximalausschlag_,int p_factor_,int i_factor_,int d_factor_){
 	i_factorA=i_factor_;
 	d_factorA=d_factor_;
 	maximalausschlagA=maximalausschlag_;
-	maximalfehlerA=200;
-	p_maximalausschlagA=500;
+	maximalfehlerA=100;
+	p_maximalausschlagA=100;
 	sumirterfehlerA =0;
-	maximalfehelersummeA=200;
-	i_maximalausschlagA =100;
+	maximalfehelersummeA=2000;
+	i_maximalausschlagA =0;
 	lezterFunktionswertA=0;
+	i_resultatA=0;
 }
 
 int pidA(int sollwert,int istwert){
@@ -66,6 +67,6 @@ int pidA(int sollwert,int istwert){
 	    else if(ret < -maximalausschlagA){
 	      ret = -maximalausschlagA;
 	    }
-	    return ret;
+	    return ret/5;
 }
 

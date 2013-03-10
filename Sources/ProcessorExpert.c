@@ -79,7 +79,7 @@ int main(void)
   
   
   //testMotor();
-  testCalibratePID_A(1000,2,0,0,500,20);
+  testCalibratePID_A(1000,1,0,0,700,20);
   for(;;) {
 	  
 	  

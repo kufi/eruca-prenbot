@@ -22,7 +22,7 @@ void initEncoders(void){
 	startEncoding();
 }
 
-void calcAritmeticMidle(int i){
+void calcAritmeticMidleA(int i){
 	switch(i)
 		 {
 		    case 0:
@@ -43,7 +43,27 @@ void calcAritmeticMidle(int i){
 		tiksA_am=0xFFFF;
 	}
 }
+void calcAritmeticMidleB(int i){
+	switch(i)
+		 {
+		    case 0:
+		    	tiksB_am = tiksB0;
+		    break;
 
+		    case 1:
+		    	tiksB_am = (tiksB0+tiksB1)/(i+1);
+		    break;
+		    case 2:
+		    	tiksB_am = (tiksB0+tiksB1+tiksB2)/(i+1);
+		    break;
+		    case 3:
+		    	tiksB_am = (tiksB0+tiksB1+tiksB2+tiksB3)/(i+1);
+		    break;
+		 }
+	if(tiksB_am==0){
+		tiksB_am=0xFFFF;
+	}
+}
 uint32_t calcDistAmm(void){
 	return (stepsA*UMPROSTEP)/1000;
 }

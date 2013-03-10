@@ -429,9 +429,11 @@ void US_Referenztimer_OnCounterRestart(LDD_TUserData *UserDataPtr)
 void RegelungReferenztimer_OnCounterRestart(LDD_TUserData *UserDataPtr)
 {
 	int newIntensityEngineA;
+	int newIntensityEngineB;
+	
 	PIDinterruptCounter++;
 	
-	if(PIDinterruptCounter>= regelverzoegerung){
+	if(PIDinterruptCounter>= regelverzoegerung){		
 		if(PIDA_Activated){
       calcAritmeticMidle(iA);
 	  PIDA_Testresault =pidA(PIDA_Testsollwert, tiksA_am);
@@ -439,8 +441,23 @@ void RegelungReferenztimer_OnCounterRestart(LDD_TUserData *UserDataPtr)
 	  if(newIntensityEngineA>=0){
 		  setMotorA_HR(newIntensityEngineA);
 	  }
-	  PIDinterruptCounter=0;
-		}
+	  if(newIntensityEngineA<0){
+	  		  setMotorA_HR(0);
+	  	  }
+	 }
+		if(PIDB_Activated){
+		      calcAritmeticMidle(iA);
+			  PIDA_Testresault =pidA(PIDA_Testsollwert, tiksA_am);
+			  newIntensityEngineA = intensityEngineA_HR - (PIDA_Testresault);
+			  if(newIntensityEngineA>=0){
+				  setMotorA_HR(newIntensityEngineA);
+			  }
+			  if(newIntensityEngineA<0){
+			  		  setMotorA_HR(0);
+			  	  }
+			 }
+		
+		 PIDinterruptCounter=0;
 	}
 	
 	if((PIDinterruptCounter>=0)&& frekwentMotortestON){
