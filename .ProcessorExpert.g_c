@@ -37,8 +37,8 @@
         <Line>Generated_Code\Vectors.c</Line>
       </GenExtraFiles>
       <XtraAge1>1114273005</XtraAge1>
-      <XtraAge2>1114273005</XtraAge2>
-      <XtraAge4>1114273005</XtraAge4>
+      <XtraAge2>1114474194</XtraAge2>
+      <XtraAge4>1114474194</XtraAge4>
       <GenExtraFileType4>4</GenExtraFileType4>
       <GenExtraFileType3>4</GenExtraFileType3>
       <GenExtraFileType2>4</GenExtraFileType2>
@@ -94,8 +94,8 @@
         <Line>I2C_Kompass</Line>
         <Line>I2CKomunikation_PI</Line>
         <Line>IO_Map</Line>
+        <Line>IO_Res_Lueft</Line>
         <Line>LED1_4</Line>
-        <Line>LED5_8</Line>
         <Line>Lichtschranke</Line>
         <Line>MotorA_PWM</Line>
         <Line>MotorB_PWM</Line>
@@ -137,7 +137,7 @@
         <Line>BitIoLdd1</Line>
         <Line>LED1_4</Line>
         <Line>BitsIoLdd3</Line>
-        <Line>LED5_8</Line>
+        <Line>IO_Res_Lueft</Line>
         <Line>BitsIoLdd4</Line>
         <Line>RegelungReferenztimer</Line>
         <Line>US_Referenztimer</Line>
@@ -162,7 +162,7 @@
     </GenFiles>
     <SignalListFile>Documentation\ProcessorExpert_SIGNALS.txt</SignalListFile>
     <DestinationCompiler>GNUC</DestinationCompiler>
-    <ProjectModificationStamp>67</ProjectModificationStamp>
+    <ProjectModificationStamp>69</ProjectModificationStamp>
   </Options>
   <CpuID_2>
     <Generated>true</Generated>
@@ -171,7 +171,7 @@
     <GenDriverVersion>01.04</GenDriverVersion>
     <GenEventModule>Events</GenEventModule>
     <HeaderAge>1111782260</HeaderAge>
-    <CodeAge>1114273005</CodeAge>
+    <CodeAge>1114474194</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>9</GenNumMethods>
     <VLPModeDisable>false</VLPModeDisable>
@@ -2588,12 +2588,12 @@
   </ComponentID_39>
   <ComponentID_41>
     <Generated>true</Generated>
-    <GenCompName>LED5_8</GenCompName>
+    <GenCompName>IO_Res_Lueft</GenCompName>
     <GenComponentVersion>02.108</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1099273686</HeaderAge>
-    <CodeAge>1099273686</CodeAge>
+    <HeaderAge>1114474194</HeaderAge>
+    <CodeAge>1114474194</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>14</GenNumMethods>
     <GetRawBit>false</GetRawBit>

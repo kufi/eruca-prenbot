@@ -1429,10 +1429,10 @@ PE_DEBUGHALT();
       <EmptySection_DummyValue />
     </Events>
   </Bean>
-  <Bean name="LED5_8" type="BitsIO">
+  <Bean name="IO_Res_Lueft" type="BitsIO">
     <Enabled v="Y" />
     <Properties>
-      <Component_name v="LED5_8" />
+      <Component_name v="IO_Res_Lueft" />
       <Port v="PTC" />
       <inhrbean type="BitsIO_LDD">
         <Enabled v="Y" />

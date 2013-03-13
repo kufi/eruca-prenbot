@@ -14,11 +14,11 @@ void initPID(int maximalausschlag_,int p_factor_,int i_factor_,int d_factor_){
 	i_factorA=i_factor_;
 	d_factorA=d_factor_;
 	maximalausschlagA=maximalausschlag_;
-	maximalfehlerA=100;
-	p_maximalausschlagA=100;
+	maximalfehlerA=1000;
+	p_maximalausschlagA=1000;
 	sumirterfehlerA =0;
-	maximalfehelersummeA=2000;
-	i_maximalausschlagA =0;
+	maximalfehelersummeA=500;
+	i_maximalausschlagA =500;
 	lezterFunktionswertA=0;
 	i_resultatA=0;
 	
@@ -26,11 +26,11 @@ void initPID(int maximalausschlag_,int p_factor_,int i_factor_,int d_factor_){
     i_factorB=i_factor_;
     d_factorB=d_factor_;
 	maximalausschlagB=maximalausschlag_;
-	maximalfehlerB=100;
-	p_maximalausschlagB=100;
+	maximalfehlerB=1000;
+	p_maximalausschlagB=1000;
 	sumirterfehlerB =0;
-	maximalfehelersummeB=2000;
-	i_maximalausschlagB =0;
+	maximalfehelersummeB=500;
+	i_maximalausschlagB =500;
 	lezterFunktionswertB=0;
 	i_resultatB=0;
 }
@@ -79,7 +79,8 @@ int pidA(int sollwert,int istwert){
 	    else if(ret < -maximalausschlagA){
 	      ret = -maximalausschlagA;
 	    }
-	    return ret/5;
+	    return (ret)/10;
+	 
 }
 
 int pidB(int sollwert,int istwert){
@@ -126,6 +127,6 @@ int pidB(int sollwert,int istwert){
 	    else if(ret < -maximalausschlagB){
 	      ret = -maximalausschlagB;
 	    }
-	    return ret/5;
+	    return (ret)/10;
 }
 

@@ -3,8 +3,8 @@
   <Header>
     <Name>ProcessorExpert</Name>
     <SavedBy>8460p</SavedBy>
-    <ModificationStamp>67</ModificationStamp>
-    <Date>2013-03-10</Date>
+    <ModificationStamp>68</ModificationStamp>
+    <Date>2013-03-13</Date>
     <IDE>Eclipse IDE</IDE>
     <PEversion />
   </Header>
@@ -13826,7 +13826,7 @@
   </Bean>
   <Bean>
     <BeanType>BitsIO</BeanType>
-    <Name>LED5_8</Name>
+    <Name>IO_Res_Lueft</Name>
     <CompNumb>41</CompNumb>
     <CompEnabled>true</CompEnabled>
     <GenCodeMode>CHECK_n_WRITE</GenCodeMode>
@@ -13840,7 +13840,7 @@
         <ItemSymbol>DeviceName</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>LED5_8</Value>
+        <Value>IO_Res_Lueft</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>_Port</ItemSymbol>

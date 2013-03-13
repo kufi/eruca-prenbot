@@ -183,28 +183,28 @@ Module "LED1_4"    (component BitsIO)
    - LED1_4_NegBit -Negates (inverts) the specified bit of the Input/Output component. It is the same as [PutBit(Bit,!
                 GetBit(Bit))]. (Method is available only if the Direction = _[output]_ or _[input/output]_).
 
-Module "LED5_8"    (component BitsIO)
-   - LED5_8_GetDir -Return selected direction.
-   - LED5_8_SetDir -Sets a direction for the pins (available only if Direction = _[input/output]_).
-   - LED5_8_GetVal -Returns the value of the Input/Output component. If the direction is [input] then reads the input value of 
-                the pins and returns it. If the direction is [output] then returns the last written value (see <Safe mode> 
-                property for limitations).
-   - LED5_8_PutVal -Specified value is passed to the Input/Output component. If the direction is [input] saves the value to a 
-                memory or a register, this value will be written to the pins after switching to the output mode - using 
+Module "IO_Res_Lueft" (component BitsIO)
+   - IO_Res_Lueft_GetDir -Return selected direction.
+   - IO_Res_Lueft_SetDir -Sets a direction for the pins (available only if Direction = _[input/output]_).
+   - IO_Res_Lueft_GetVal -Returns the value of the Input/Output component. If the direction is [input] then reads the input 
+                value of the pins and returns it. If the direction is [output] then returns the last written value (see <Safe 
+                mode> property for limitations).
+   - IO_Res_Lueft_PutVal -Specified value is passed to the Input/Output component. If the direction is [input] saves the value 
+                to a memory or a register, this value will be written to the pins after switching to the output mode - using 
                 [SetDir(TRUE)] (see <Safe mode> property for limitations). If the direction is [output] it writes the value to 
                 the pins. (Method is available only if the Direction = _[output]_ or _[input/output]_).
-   - LED5_8_GetBit -Returns the value of the specified bit/pin of the Input/Output component. If the direction is [input] then 
-                it reads the input value of the pin and returns it. If the direction is [output] then it returns the last 
+   - IO_Res_Lueft_GetBit -Returns the value of the specified bit/pin of the Input/Output component. If the direction is [input] 
+                then it reads the input value of the pin and returns it. If the direction is [output] then it returns the last 
                 written value (see <Safe mode> property for limitations).
-   - LED5_8_PutBit -Specified value is passed to the specified bit/pin of the Input/Output component. If the direction is 
+   - IO_Res_Lueft_PutBit -Specified value is passed to the specified bit/pin of the Input/Output component. If the direction is 
                 [input] it saves the value to a memory or register, this value will be written to the pin after switching to 
                 the output mode - using [SetDir(TRUE)] (see <Safe mode> property for limitations). If the direction is [output] 
                 it writes the value to the pin. (Method is available only if the Direction = _[output]_ or _[input/output]_).
-   - LED5_8_SetBit -Sets (to one) the specified bit of the Input/Output component. It is the same as [PutBit(Bit, TRUE)]. 
+   - IO_Res_Lueft_SetBit -Sets (to one) the specified bit of the Input/Output component. It is the same as [PutBit(Bit, TRUE)]. 
                 (Method is available only if the Direction = _[output]_ or _[input/output]_).
-   - LED5_8_ClrBit -Clears (sets to zero) the specified bit of the Input/Output component. It is the same as [PutBit(Bit, FALSE)
-                ]. (Method is available only if the Direction = _[output]_ or _[input/output]_).
-   - LED5_8_NegBit -Negates (inverts) the specified bit of the Input/Output component. It is the same as [PutBit(Bit,!
+   - IO_Res_Lueft_ClrBit -Clears (sets to zero) the specified bit of the Input/Output component. It is the same as [PutBit(Bit, 
+                FALSE)]. (Method is available only if the Direction = _[output]_ or _[input/output]_).
+   - IO_Res_Lueft_NegBit -Negates (inverts) the specified bit of the Input/Output component. It is the same as [PutBit(Bit,!
                 GetBit(Bit))]. (Method is available only if the Direction = _[output]_ or _[input/output]_).
 
 Module "RegelungReferenztimer" (component TimerUnit_LDD)

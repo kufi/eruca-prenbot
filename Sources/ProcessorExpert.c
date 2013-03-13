@@ -38,7 +38,7 @@
 #include "BitIoLdd1.h"
 #include "LED1_4.h"
 #include "BitsIoLdd3.h"
-#include "LED5_8.h"
+#include "IO_Res_Lueft.h"
 #include "BitsIoLdd4.h"
 #include "RegelungReferenztimer.h"
 #include "US_Referenztimer.h"
@@ -83,7 +83,7 @@ int main(void)
   
   
   //testMotor();
-  testCalibratePID_A(1000,1,0,0,700,20);
+  testCalibratePID_A(1000,1,0,0,1000,20);
   for(;;) {
 	  
 	  

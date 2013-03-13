@@ -12,7 +12,6 @@
 int regelverzoegerung;
 static int PIDinterruptCounter;
 
-
 //Werte für PIDA
 
 int PIDA_Activated;

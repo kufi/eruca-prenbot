@@ -39,7 +39,7 @@ void calcAritmeticMidleA(int i){
 		    	tiksA_am = (tiksA0+tiksA1+tiksA2+tiksA3)/(i+1);
 		    break;
 		 }
-	if(tiksA_am==0){
+	if(tiksA_am<=50){
 		tiksA_am=0xFFFF;
 	}
 }
@@ -60,7 +60,7 @@ void calcAritmeticMidleB(int i){
 		    	tiksB_am = (tiksB0+tiksB1+tiksB2+tiksB3)/(i+1);
 		    break;
 		 }
-	if(tiksB_am==0){
+	if(tiksB_am<=50){
 		tiksB_am=0xFFFF;
 	}
 }
