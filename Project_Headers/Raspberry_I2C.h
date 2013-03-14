@@ -8,6 +8,7 @@
 #ifndef RASPBERRY_I2C_H_
 #define RASPBERRY_I2C_H_
 
-void init();
+void initRaspberryI2C();
+void receiveBlock();
 
 #endif /* RASPBERRY_I2C_H_ */
