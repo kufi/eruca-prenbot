@@ -160,7 +160,9 @@ void I2CKomunikation_PI_OnSlaveBlockSent(LDD_TUserData *UserDataPtr)
 */
 void I2CKomunikation_PI_OnSlaveBlockReceived(LDD_TUserData *UserDataPtr)
 {
- 
+	RaspberryPtr raspberryPtr = (RaspberryPtr)UserDataPtr;
+	raspberryPtr->received = 1;
+	(*raspberryPtr->functionPtr)();
 }
 
 /*

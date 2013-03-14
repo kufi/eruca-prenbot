@@ -69,6 +69,7 @@
 #include "Encoder.h"
 #include "EasyRider.h"
 #include "US.h"
+#include "Raspberry_I2C.h"
 
 /*lint -save  -e970 Disable MISRA rule (6.3) checking. */
 int main(void)
