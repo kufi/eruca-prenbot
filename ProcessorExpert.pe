@@ -3,8 +3,8 @@
   <Header>
     <Name>ProcessorExpert</Name>
     <SavedBy>Admin</SavedBy>
-    <ModificationStamp>70</ModificationStamp>
-    <Date>2013-03-14</Date>
+    <ModificationStamp>72</ModificationStamp>
+    <Date>2013-03-15</Date>
     <IDE>Eclipse IDE</IDE>
     <PEversion />
   </Header>
@@ -27,7 +27,7 @@
     <UseExistingModules>true</UseExistingModules>
     <RenamePeripheries>false</RenamePeripheries>
     <Autodependency>true</Autodependency>
-    <ProjectCompNumb>119</ProjectCompNumb>
+    <ProjectCompNumb>125</ProjectCompNumb>
     <DelUnusedPreviouslyGenFiles>true</DelUnusedPreviouslyGenFiles>
     <GeneratedCodeFrozen>false</GeneratedCodeFrozen>
     <AssignInitComponentNameToPrph>false</AssignInitComponentNameToPrph>
@@ -173,7 +173,6 @@
         <ItemSymbol>RTC_CLKINPinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>SystemOSCGrp</ItemSymbol>
@@ -204,7 +203,6 @@
         <ItemSymbol>SystemOSCExtalPinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>SystemOSCXtal_Grp</ItemSymbol>
@@ -221,7 +219,6 @@
         <ItemSymbol>SystemOSCXtalPinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>SystemOSC</ItemSymbol>
@@ -322,7 +319,7 @@
         <ItemSymbol>ERCLK32KSelectCLKMode0</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Index>1</Index>
+        <Index>0</Index>
         <EnumSymbVal>0</EnumSymbVal>
       </ItemState>
       <ItemState>
@@ -348,7 +345,6 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>MCGModeCLKMode0</ItemSymbol>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>MCGOutputCLKMode0</ItemSymbol>
@@ -583,7 +579,6 @@
         <ItemSymbol>NMINMIPinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>SharedNMI0</ItemSymbol>
@@ -614,7 +609,6 @@
         <ItemSymbol>RCMResetPinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>RCMFilterInStop</ItemSymbol>
@@ -677,7 +671,6 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>FlexNVMSize</ItemSymbol>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>Dpart</ItemSymbol>
@@ -1468,7 +1461,6 @@
         <ItemSymbol>PMCISRnameLVD</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>PMCLVDinterrupt</ItemSymbol>
@@ -1531,7 +1523,6 @@
         <ItemSymbol>SIMCLKOUTPinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>SIMCLKOUT</ItemSymbol>
@@ -1797,7 +1788,6 @@
         <ItemSymbol>ISRnameNMI</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>DevInit_Default_ISRGrp</ItemSymbol>
@@ -1860,7 +1850,6 @@
         <ItemSymbol>ISRnameHardfault</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>IntMPUGrp</ItemSymbol>
@@ -1880,7 +1869,6 @@
         <ItemSymbol>ISRnameMPU</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>IntBusFaultGrp</ItemSymbol>
@@ -1908,7 +1896,6 @@
         <ItemSymbol>ISRnameBusFault</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>IntUsageFaultGrp</ItemSymbol>
@@ -1936,7 +1923,6 @@
         <ItemSymbol>ISRnameUsageFault</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>IntSVCallGrp</ItemSymbol>
@@ -1964,7 +1950,6 @@
         <ItemSymbol>ISRnameSVCall</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>IntPendSVGrp</ItemSymbol>
@@ -1992,7 +1977,6 @@
         <ItemSymbol>ISRnamePendSV</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>IntLossOfLockNotFeatureGrp</ItemSymbol>
@@ -2023,7 +2007,6 @@
         <ItemSymbol>ISRnameLossOfLock</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LowPowerModesGrp</ItemSymbol>
@@ -2103,7 +2086,6 @@
         <ItemSymbol>LLWUExtPinChan5Signal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUExtPin6</ItemSymbol>
@@ -2122,7 +2104,6 @@
         <ItemSymbol>LLWUExtPinChan6Signal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUExtPin7</ItemSymbol>
@@ -2141,7 +2122,6 @@
         <ItemSymbol>LLWUExtPinChan7Signal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUExtPin8</ItemSymbol>
@@ -2160,7 +2140,6 @@
         <ItemSymbol>LLWUExtPinChan8Signal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUExtPin9</ItemSymbol>
@@ -2179,7 +2158,6 @@
         <ItemSymbol>LLWUExtPinChan9Signal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUExtPin10</ItemSymbol>
@@ -2198,7 +2176,6 @@
         <ItemSymbol>LLWUExtPinChan10Signal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUExtPin14</ItemSymbol>
@@ -2217,7 +2194,6 @@
         <ItemSymbol>LLWUExtPinChan14Signal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUExtPin15</ItemSymbol>
@@ -2236,7 +2212,6 @@
         <ItemSymbol>LLWUExtPinChan15Signal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUIntModule0</ItemSymbol>
@@ -2302,7 +2277,6 @@
         <ItemSymbol>LLWUFilt1ExtPin5Signal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUFilt1ExtPin6</ItemSymbol>
@@ -2314,7 +2288,6 @@
         <ItemSymbol>LLWUFilt1ExtPin6Signal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUFilt1ExtPin7</ItemSymbol>
@@ -2326,7 +2299,6 @@
         <ItemSymbol>LLWUFilt1ExtPin7Signal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUFilt1ExtPin8</ItemSymbol>
@@ -2338,7 +2310,6 @@
         <ItemSymbol>LLWUFilt1ExtPin8Signal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUFilt1ExtPin9</ItemSymbol>
@@ -2350,7 +2321,6 @@
         <ItemSymbol>LLWUFilt1ExtPin9Signal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUFilt1ExtPin10</ItemSymbol>
@@ -2362,7 +2332,6 @@
         <ItemSymbol>LLWUFilt1ExtPin10Signal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUFilt1ExtPin14</ItemSymbol>
@@ -2374,7 +2343,6 @@
         <ItemSymbol>LLWUFilt1ExtPin14Signal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUFilt1ExtPin15</ItemSymbol>
@@ -2386,7 +2354,6 @@
         <ItemSymbol>LLWUFilt1ExtPin15Signal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUFiltr2</ItemSymbol>
@@ -2412,7 +2379,6 @@
         <ItemSymbol>LLWUFilt2ExtPin5Signal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUFilt2ExtPin6</ItemSymbol>
@@ -2424,7 +2390,6 @@
         <ItemSymbol>LLWUFilt2ExtPin6Signal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUFilt2ExtPin7</ItemSymbol>
@@ -2436,7 +2401,6 @@
         <ItemSymbol>LLWUFilt2ExtPin7Signal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUFilt2ExtPin8</ItemSymbol>
@@ -2448,7 +2412,6 @@
         <ItemSymbol>LLWUFilt2ExtPin8Signal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUFilt2ExtPin9</ItemSymbol>
@@ -2460,7 +2423,6 @@
         <ItemSymbol>LLWUFilt2ExtPin9Signal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUFilt2ExtPin10</ItemSymbol>
@@ -2472,7 +2434,6 @@
         <ItemSymbol>LLWUFilt2ExtPin10Signal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUFilt2ExtPin14</ItemSymbol>
@@ -2484,7 +2445,6 @@
         <ItemSymbol>LLWUFilt2ExtPin14Signal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUFilt2ExtPin15</ItemSymbol>
@@ -2496,7 +2456,6 @@
         <ItemSymbol>LLWUFilt2ExtPin15Signal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUInterruptsGroup</ItemSymbol>
@@ -2543,7 +2502,6 @@
         <ItemSymbol>LLWUISRHandleCommon</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>LLWUInternalUsageGrp</ItemSymbol>
@@ -3582,7 +3540,6 @@
         <ItemState>
           <ItemSymbol>C_CCPars</ItemSymbol>
           <ReadOnly>false</ReadOnly>
-          <Value />
         </ItemState>
         <ItemState>
           <ItemSymbol>lnkgrp</ItemSymbol>
@@ -3640,7 +3597,6 @@
         <ItemState>
           <ItemSymbol>C_LINKPars</ItemSymbol>
           <ReadOnly>false</ReadOnly>
-          <Value />
         </ItemState>
         <ItemState>
           <ItemSymbol>NonECLIGrp</ItemSymbol>
@@ -3810,7 +3766,7 @@
     <IconName>CLOCKS_LDD</IconName>
     <Comment lines_count="0" />
     <Template />
-    <BeanVersion>01.139</BeanVersion>
+    <BeanVersion>01.137</BeanVersion>
     <LightErrorsIgnored>false</LightErrorsIgnored>
     <Properties>
       <ItemState>
@@ -3918,7 +3874,6 @@
         <ItemSymbol>InpPinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>ExtInitEdge</ItemSymbol>
@@ -4306,7 +4261,6 @@
         <ItemSymbol>ChanCapInpPinSignal0</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>ChanCapEdge0</ItemSymbol>
@@ -4466,7 +4420,6 @@
         <ItemSymbol>ChanCapInpPinSignal1</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>ChanCapEdge1</ItemSymbol>
@@ -4995,7 +4948,6 @@
         <ItemSymbol>OutPinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>Tmr</ItemSymbol>
@@ -5061,7 +5013,6 @@
               <ItemSymbol>OutPinSignal</ItemSymbol>
               <ReadOnly>false</ReadOnly>
               <UserReadOnly>false</UserReadOnly>
-              <Value />
             </ItemState>
             <ItemState>
               <ItemSymbol>Tmr</ItemSymbol>
@@ -5087,7 +5038,6 @@
             </ItemState>
             <ItemState>
               <ItemSymbol>IntPriority</ItemSymbol>
-              <Value />
             </ItemState>
             <ItemState>
               <ItemSymbol>CmpInitPriority</ItemSymbol>
@@ -5622,7 +5572,6 @@
         <ItemSymbol>PWMEmergencyShutdownPinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>PWMEmergencyShutdownInputLevel</ItemSymbol>
@@ -6262,7 +6211,6 @@
         <ItemSymbol>OutPinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>Tmr</ItemSymbol>
@@ -6328,7 +6276,6 @@
               <ItemSymbol>OutPinSignal</ItemSymbol>
               <ReadOnly>false</ReadOnly>
               <UserReadOnly>false</UserReadOnly>
-              <Value />
             </ItemState>
             <ItemState>
               <ItemSymbol>Tmr</ItemSymbol>
@@ -6354,7 +6301,6 @@
             </ItemState>
             <ItemState>
               <ItemSymbol>IntPriority</ItemSymbol>
-              <Value />
             </ItemState>
             <ItemState>
               <ItemSymbol>CmpInitPriority</ItemSymbol>
@@ -6889,7 +6835,6 @@
         <ItemSymbol>PWMEmergencyShutdownPinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>PWMEmergencyShutdownInputLevel</ItemSymbol>
@@ -7485,7 +7430,7 @@
     <IconName>CLOCKS_LDD</IconName>
     <Comment lines_count="0" />
     <Template />
-    <BeanVersion>01.139</BeanVersion>
+    <BeanVersion>01.137</BeanVersion>
     <LightErrorsIgnored>false</LightErrorsIgnored>
     <Properties>
       <ItemState>
@@ -7594,7 +7539,6 @@
         <ItemSymbol>InpPinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>ExtInitEdge</ItemSymbol>
@@ -7699,7 +7643,6 @@
         <List lines_count="0" />
         <UnitText />
         <MinCounterTicks>0</MinCounterTicks>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>OverrunPeriod</ItemSymbol>
@@ -8610,7 +8553,6 @@
               <ItemSymbol>SHPinSignal</ItemSymbol>
               <ReadOnly>false</ReadOnly>
               <UserReadOnly>false</UserReadOnly>
-              <Value />
             </ItemState>
             <ItemState>
               <ItemSymbol>SHPullMode</ItemSymbol>
@@ -8905,7 +8847,6 @@
         <ItemSymbol>SHPinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>SHPullMode</ItemSymbol>
@@ -9109,7 +9050,6 @@
         <ItemSymbol>PinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>FeatureCondGrpLDD</ItemSymbol>
@@ -9234,7 +9174,6 @@
               <ItemSymbol>SHPinSignal</ItemSymbol>
               <ReadOnly>false</ReadOnly>
               <UserReadOnly>false</UserReadOnly>
-              <Value />
             </ItemState>
             <ItemState>
               <ItemSymbol>SHPullMode</ItemSymbol>
@@ -9529,7 +9468,6 @@
         <ItemSymbol>SHPinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>SHPullMode</ItemSymbol>
@@ -9759,7 +9697,7 @@
           <IconName>USER_LDD</IconName>
           <Comment lines_count="0" />
           <Template>BitsIO\BitsIO_LDD</Template>
-          <BeanVersion>01.021</BeanVersion>
+          <BeanVersion>01.019</BeanVersion>
           <LightErrorsIgnored>false</LightErrorsIgnored>
           <Properties>
             <ItemState>
@@ -10722,7 +10660,6 @@
         <ItemSymbol>SDApinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>SDAReduce</ItemSymbol>
@@ -10746,7 +10683,6 @@
         <ItemSymbol>SCLpinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>SCLReduce</ItemSymbol>
@@ -10922,7 +10858,6 @@
         <List lines_count="0" />
         <UnitText />
         <MinCounterTicks>0</MinCounterTicks>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>SDALowTimeout</ItemSymbol>
@@ -11769,7 +11704,7 @@
           <IconName>USER_LDD</IconName>
           <Comment lines_count="0" />
           <Template>BitsIO\BitsIO_LDD</Template>
-          <BeanVersion>01.021</BeanVersion>
+          <BeanVersion>01.019</BeanVersion>
           <LightErrorsIgnored>false</LightErrorsIgnored>
           <Properties>
             <ItemState>
@@ -12589,7 +12524,7 @@
           <IconName>BitIO_LDD</IconName>
           <Comment lines_count="0" />
           <Template>BitIO\BitIO_LDD</Template>
-          <BeanVersion>01.031</BeanVersion>
+          <BeanVersion>01.021</BeanVersion>
           <LightErrorsIgnored>false</LightErrorsIgnored>
           <Properties>
             <ItemState>
@@ -13132,7 +13067,7 @@
           <IconName>USER_LDD</IconName>
           <Comment lines_count="0" />
           <Template>BitsIO\BitsIO_LDD</Template>
-          <BeanVersion>01.021</BeanVersion>
+          <BeanVersion>01.019</BeanVersion>
           <LightErrorsIgnored>false</LightErrorsIgnored>
           <Properties>
             <ItemState>
@@ -13906,7 +13841,7 @@
     <Name>IO_Res_Lueft</Name>
     <CompNumb>41</CompNumb>
     <CompEnabled>true</CompEnabled>
-    <GenCodeMode>DONT_WRITE</GenCodeMode>
+    <GenCodeMode>ALWAYS_WRITE</GenCodeMode>
     <IconName>BITSIO</IconName>
     <Comment lines_count="0" />
     <Template />
@@ -13956,7 +13891,7 @@
           <IconName>USER_LDD</IconName>
           <Comment lines_count="0" />
           <Template>BitsIO\BitsIO_LDD</Template>
-          <BeanVersion>01.021</BeanVersion>
+          <BeanVersion>01.019</BeanVersion>
           <LightErrorsIgnored>false</LightErrorsIgnored>
           <Properties>
             <ItemState>
@@ -14734,7 +14669,7 @@
     <IconName>CLOCKS_LDD</IconName>
     <Comment lines_count="0" />
     <Template />
-    <BeanVersion>01.139</BeanVersion>
+    <BeanVersion>01.137</BeanVersion>
     <LightErrorsIgnored>false</LightErrorsIgnored>
     <Properties>
       <ItemState>
@@ -14842,7 +14777,6 @@
         <ItemSymbol>InpPinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>ExtInitEdge</ItemSymbol>
@@ -15553,7 +15487,7 @@
     <IconName>CLOCKS_LDD</IconName>
     <Comment lines_count="0" />
     <Template />
-    <BeanVersion>01.139</BeanVersion>
+    <BeanVersion>01.137</BeanVersion>
     <LightErrorsIgnored>false</LightErrorsIgnored>
     <Properties>
       <ItemState>
@@ -15661,7 +15595,6 @@
         <ItemSymbol>InpPinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>ExtInitEdge</ItemSymbol>
@@ -15766,7 +15699,6 @@
         <List lines_count="0" />
         <UnitText />
         <MinCounterTicks>0</MinCounterTicks>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>OverrunPeriod</ItemSymbol>
@@ -16559,7 +16491,6 @@
         <ItemSymbol>SDApinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>SDAReduce</ItemSymbol>
@@ -16583,7 +16514,6 @@
         <ItemSymbol>SCLpinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>SCLReduce</ItemSymbol>
@@ -16759,7 +16689,6 @@
         <List lines_count="0" />
         <UnitText />
         <MinCounterTicks>0</MinCounterTicks>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>SDALowTimeout</ItemSymbol>
@@ -17580,7 +17509,6 @@
         <ItemSymbol>PinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>FeatureCondGrpLDD</ItemSymbol>
@@ -17705,7 +17633,6 @@
               <ItemSymbol>SHPinSignal</ItemSymbol>
               <ReadOnly>false</ReadOnly>
               <UserReadOnly>false</UserReadOnly>
-              <Value />
             </ItemState>
             <ItemState>
               <ItemSymbol>SHPullMode</ItemSymbol>
@@ -18000,7 +17927,6 @@
         <ItemSymbol>SHPinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>SHPullMode</ItemSymbol>
@@ -18204,7 +18130,6 @@
         <ItemSymbol>PinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>FeatureCondGrpLDD</ItemSymbol>
@@ -18329,7 +18254,6 @@
               <ItemSymbol>SHPinSignal</ItemSymbol>
               <ReadOnly>false</ReadOnly>
               <UserReadOnly>false</UserReadOnly>
-              <Value />
             </ItemState>
             <ItemState>
               <ItemSymbol>SHPullMode</ItemSymbol>
@@ -18624,7 +18548,6 @@
         <ItemSymbol>SHPinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>SHPullMode</ItemSymbol>
@@ -18828,7 +18751,6 @@
         <ItemSymbol>PinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>FeatureCondGrpLDD</ItemSymbol>
@@ -18953,7 +18875,6 @@
               <ItemSymbol>SHPinSignal</ItemSymbol>
               <ReadOnly>false</ReadOnly>
               <UserReadOnly>false</UserReadOnly>
-              <Value />
             </ItemState>
             <ItemState>
               <ItemSymbol>SHPullMode</ItemSymbol>
@@ -19248,7 +19169,6 @@
         <ItemSymbol>SHPinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>SHPullMode</ItemSymbol>
@@ -19452,7 +19372,6 @@
         <ItemSymbol>PinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>FeatureCondGrpLDD</ItemSymbol>
@@ -19577,7 +19496,6 @@
               <ItemSymbol>SHPinSignal</ItemSymbol>
               <ReadOnly>false</ReadOnly>
               <UserReadOnly>false</UserReadOnly>
-              <Value />
             </ItemState>
             <ItemState>
               <ItemSymbol>SHPullMode</ItemSymbol>
@@ -19872,7 +19790,6 @@
         <ItemSymbol>SHPinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>SHPullMode</ItemSymbol>
@@ -20076,7 +19993,6 @@
         <ItemSymbol>PinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>FeatureCondGrpLDD</ItemSymbol>
@@ -20201,7 +20117,6 @@
               <ItemSymbol>SHPinSignal</ItemSymbol>
               <ReadOnly>false</ReadOnly>
               <UserReadOnly>false</UserReadOnly>
-              <Value />
             </ItemState>
             <ItemState>
               <ItemSymbol>SHPullMode</ItemSymbol>
@@ -20496,7 +20411,6 @@
         <ItemSymbol>SHPinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>SHPullMode</ItemSymbol>
@@ -20700,7 +20614,6 @@
         <ItemSymbol>PinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>FeatureCondGrpLDD</ItemSymbol>
@@ -20722,7 +20635,7 @@
           <IconName>BitIO_LDD</IconName>
           <Comment lines_count="0" />
           <Template>BitIO\BitIO_LDD</Template>
-          <BeanVersion>01.031</BeanVersion>
+          <BeanVersion>01.021</BeanVersion>
           <LightErrorsIgnored>false</LightErrorsIgnored>
           <Properties>
             <ItemState>
@@ -21239,7 +21152,6 @@
         <ItemSymbol>PinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>FeatureCondGrpLDD</ItemSymbol>
@@ -21364,7 +21276,6 @@
               <ItemSymbol>SHPinSignal</ItemSymbol>
               <ReadOnly>false</ReadOnly>
               <UserReadOnly>false</UserReadOnly>
-              <Value />
             </ItemState>
             <ItemState>
               <ItemSymbol>SHPullMode</ItemSymbol>
@@ -21659,7 +21570,6 @@
         <ItemSymbol>SHPinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>SHPullMode</ItemSymbol>
@@ -21863,7 +21773,6 @@
         <ItemSymbol>PinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>FeatureCondGrpLDD</ItemSymbol>
@@ -21988,7 +21897,6 @@
               <ItemSymbol>SHPinSignal</ItemSymbol>
               <ReadOnly>false</ReadOnly>
               <UserReadOnly>false</UserReadOnly>
-              <Value />
             </ItemState>
             <ItemState>
               <ItemSymbol>SHPullMode</ItemSymbol>
@@ -22283,7 +22191,6 @@
         <ItemSymbol>SHPinSignal</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value />
       </ItemState>
       <ItemState>
         <ItemSymbol>SHPullMode</ItemSymbol>

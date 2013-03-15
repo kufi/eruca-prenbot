@@ -27,6 +27,7 @@
 #include "Motor.h"
 #include "motor_HR.h"
 #include "EasyRider.h"
+#include "Raspberry_I2C.h"
 /*
 ** ===================================================================
 **     Event       :  Cpu_OnNMIINT (module Events)

@@ -6,7 +6,7 @@
 **     Component   : I2C_LDD
 **     Version     : Component 01.011, Driver 01.06, CPU db: 3.00.000
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2013-02-28, 11:34, # CodeGen: 57
+**     Date/Time   : 2013-03-14, 12:03, # CodeGen: 83
 **     Abstract    :
 **          This component encapsulates the internal I2C communication
 **          interface. The implementation of the interface is based
@@ -51,18 +51,18 @@
 **                SCL pin signal                           : 
 **              High drive select                          : Disabled
 **              Input Glitch filter                        : 0
-**            Internal frequency (multiplier factor)       : 5.24288 MHz
-**            Bits 0-2 of Frequency divider register       : 101
-**            Bits 3-5 of Frequency divider register       : 001
+**            Internal frequency (multiplier factor)       : 20.97152 MHz
+**            Bits 0-2 of Frequency divider register       : 001
+**            Bits 3-5 of Frequency divider register       : 100
 **            SCL frequency                                : 109.227 kHz
-**            SDA Hold                                     : 2.098 us
-**            SCL start Hold                               : 3.815 us
-**            SCL stop Hold                                : 4.768 us
+**            SDA Hold                                     : 0.811 us
+**            SCL start Hold                               : 4.482 us
+**            SCL stop Hold                                : 4.625 us
 **            Control acknowledge bit                      : Enabled
 **              Delay loop cycle number                    : 200
 **            Low timeout                                  : Disabled
 **          Initialization                                 : 
-**            Enabled in init code                         : yes
+**            Enabled in init code                         : no
 **            Auto initialization                          : yes
 **            Event mask                                   : 
 **              OnMasterBlockSent                          : Disabled

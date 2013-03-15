@@ -8,6 +8,12 @@
 #ifndef RASPBERRY_I2C_H_
 #define RASPBERRY_I2C_H_
 
+typedef struct Raspberry_
+{
+	int received;
+	void (*functionPtr)();
+} Raspberry, *RaspberryPtr;
+
 void initRaspberryI2C();
 void receiveBlock();
 

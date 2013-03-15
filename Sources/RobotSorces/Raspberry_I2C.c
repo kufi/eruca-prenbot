@@ -10,12 +10,6 @@
 #include "PE_Types.h"
 #include "cstdlib"
 
-typedef struct Raspberry_
-{
-	int received;
-	void (*functionPtr)();
-} Raspberry, *RaspberryPtr;
-
 
 typedef struct {
   uint8_t SerFlag;                     /* Flags for serial communication */
@@ -34,36 +28,28 @@ typedef struct {
 
 typedef I2CKomunikation_PI_TDeviceData *I2CKomunikation_PI_TDeviceDataPtr; /* Pointer to the device data structure. */
 
-I2CKomunikation_PI_TDeviceDataPtr I2cSlavePtr;
+I2CKomunikation_PI_TDeviceDataPtr raspberryPtr;
 byte *buffer;
-RaspberryPtr userDataPtr;
+RaspberryPtr raspberryDataPtr;
+int commandLength;
 
 void initRaspberryI2C()
 {
-	buffer = (byte *)malloc(sizeof(byte) * 2);
+	commandLength = 3;
+	buffer = (byte *)malloc(sizeof(byte) * commandLength);
 	//userDataPtr->functionPtr = receiveBlock;
 	
-	I2cSlavePtr = I2CKomunikation_PI_Init(&userDataPtr);
+	raspberryPtr = I2CKomunikation_PI_Init(&raspberryDataPtr);
 	
 	receiveBlock();
 }
 
 void receiveBlock()
 {
-	I2CKomunikation_PI_SlaveReceiveBlock(I2cSlavePtr, buffer, 2);
+	I2CKomunikation_PI_SlaveReceiveBlock(raspberryPtr, buffer, commandLength);
 }
-/*
+
 void blockReceived()
 {
-	error = I2cSlavePtr->ErrorMask;
-	if(error == 0)
-	{
-		char high = *buffer;
-		char low = *(buffer + 1);
-		userDataPtr->received = 0;
-	}
-	userDataPtr->received = 0;
-	
 	receiveBlock();
 }
-*/
